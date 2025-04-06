@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Security</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>  
+        <div class="navbar">
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+            <h2 style="margin-left: 50px;">!NextStep</h2>
+
+            <nav class="nav-header">
+                <a href="index.html">головна сторінка</a>
+                <a href=".html">захист</a>
+                <a href=".html">безпека</a>
+                <a href=".html">маніпуляції</a>
+            </nav>
+
+          <div class="sidebar" id="sidebar">
+            <nav>
+             <a href="index.html">головна сторінка</a>
+                <a href=".html">захист</a>
+                <a href=".html">безпека</a>
+                <a href=".html">маніпуляції</a>
+            </nav>
+           </div>
+            
+           <script>
+            function toggleMenu() {
+                let sidebar = document.getElementById("sidebar");
+                if (sidebar.style.left === "0px") {
+                    sidebar.style.left = "-250px";
+                } else {
+                    sidebar.style.left = "0px";
+                }
+            }
+          </script>
+
+        </div>
+
+  </header>
+
+  <main>
+      <h1 class="hero">!NextStep</h1>
+      <p class="hero-p"> &copy *** 2025 COPYRIGHT RESERWED</p>
+
+      <div class="box-info">
+        <h1>Кібербезпека - що це таке?</h1>
+      </div>
+
+      <section class="info-sectiont">
+
+        <div class="carousel-wrapper">
+          <div class="carousel" id="carousel"></div>
+        </div>
+
+        <article class="p-info-article">
+
+          <script>
+            const images = [
+            'https://gardner-webb.edu/wp-content/uploads/2022/09/cybersecurity-advanced-laptop.jpg',
+            'https://bairesdev.mo.cloudinary.net/blog/2023/09/Hire-Cybersecurity-Experts-in-2023.jpg?tx=w_1920,q_auto',
+            'https://assets.bizclikmedia.net/1336/8dc2872cdb3d622f052fee37f0a9b7de:923ff94b35be99a0d373c50211dddcd3/gettyimages-1310426274-0-jpg.webp',
+            'https://www.oecd.org/adobe/dynamicmedia/deliver/dm-aid--4957b882-28e6-446a-983d-c3aec72ca78a/3673cd60-en.jpg?quality=80&preferwebp=true',
+            'https://d1leteosk75kgr.cloudfront.net/styles/np8_full/s3/media/2024/10/01/cybersecurity_epr_bericht.jpg?itok=XjKtRQLC'
+            ];
+
+           const carousel = document.getElementById('carousel');
+
+           const fullImageList = [...images, ...images];
+
+            fullImageList.forEach(src => {
+            const img = document.createElement('img');
+            img.src = src;
+            carousel.appendChild(img);
+           });
+
+          </script>
+
+          <div class="p-info">
+            <p>
+              <span>Кібербезпека</span> — це захист комп’ютерів, серверів, мобільних пристроїв, 
+              мереж і даних від кібератак. Вона спрямована на запобігання злому, 
+              крадіжці інформації, вірусним атакам і шахрайству в Інтернеті.<br>
+            </p>
+
+            <a href="dhfnb.html"> > Добірка цікавих фактів та цікавинок про кібербезпеку</a>
+
+          </div>
+
+        </article>
+
+      </section>
+
+      <div class="box-info">
+        <h1>Основні напрями кібербезпеки</h1>
+      </div>
+
+      <p class="box-info-p">
+         напрямків в яких працює кібербезпека дуже багато, тут підібрані основні 
+         6 , які найчастіше використовуються.
+      </p>
+
+      <section class="box-container">
+
+        <article class="box">
+          <div class="card swiper-slide">
+            <div class="card-image">
+              <img src="https://builtin.com/sites/www.builtin.com/files/2024-10/cybersecurity.png" alt="фото">
+              <p class="card-tag">#безпека</p>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Мережева безпека</h3>
+              <p class="card-text">Приклад атаки: DDoS-атака – коли хакери перевантажують сервер 
+                фальшивими запитами, що призводить до збоїв у роботі сайту.</p>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="https://builtin.com/sites/www.builtin.com/files/2024-10/cybersecurity.png" alt="фото">
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">!NextStep</span>
+                    <span class="card-profile-role">читати більше...</span>
+                  </div>
+                </div>
+                <a href="#merecsheva-bezpeka" class="card-button">Read More</a>
+              </div> 
+            </div>
+          </div>
+        </article>
+
+    <article class="box">
+      <div class="card swiper-slide">
+        <div class="card-image">
+          <img src="https://www.dataminr.com/wp-content/uploads/2023/10/THUMBNAIL_5-Regions-With-New-and-Changing-Cybersecurity-Legislation-scaled.jpg" alt="фото">
+          <p class="card-tag">#безпека</p>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Інформаційна безпека</h3>
+          <p class="card-text">Приклад атаки: Витік даних – коли зловмисники 
+            отримують доступ до особистої або конфіденційної інформації компаній 
+            або користувачів.</p>
+          <div class="card-footer">
+            <div class="card-profile">
+              <img src="https://builtin.com/sites/www.builtin.com/files/2024-10/cybersecurity.png" alt="фото">
+              <div class="card-profile-info">
+                <span class="card-profile-name">!NextStep</span>
+                <span class="card-profile-role">читати більше...</span>
+              </div>
+            </div>
+            <a class="card-button" href="#informaciina-bezpeka">Read More</a>
+          </div> 
+        </div>
+      </div>
+    </article>
+
+    <article class="box">
+      <div class="card swiper-slide">
+        <div class="card-image">
+          <img src="https://img.corrierecomunicazioni.it/wp-content/uploads/2024/07/26114735/cyber-cybersecurity-privacy-Gdpr-dati-personali.jpg" alt="фото">
+          <p class="card-tag">#безпека</p>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title"> Операційна безпека</h3>
+          <p class="card-text">  Приклад атаки: Використання вкраденого пароля 
+            для доступу до корпоративних систем, чи для взлому приватного акаунту.</p>
+          <div class="card-footer">
+            <div class="card-profile">
+              <img src="https://builtin.com/sites/www.builtin.com/files/2024-10/cybersecurity.png" alt="фото">
+              <div class="card-profile-info">
+                <span class="card-profile-name">!NextStep</span>
+                <span class="card-profile-role">читати більше...</span>
+              </div>
+            </div>
+            <a class="card-button" href="#OPSEC-bezpeka">Read More</a>
+          </div> 
+        </div>
+      </div>
+    </article>
+
+    <article class="box">
+      <div class="card swiper-slide">
+        <div class="card-image">
+          <img src="https://data.netzwoche.ch/styles/np8_full/s3/media/2024/10/01/cybersecurity_epr_bericht.jpg?itok=XjKtRQLC" alt="фото">
+          <p class="card-tag">#захист</p>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Захист від вірусів / ПЗ</h3>
+          <p class="card-text"> Приклад атаки: Вірус-вимагач, який блокує файли та вимагає викуп. Або ж 
+            шкідливе ПЗ яке блокує доступ до всіх інтерактивних деталей екрану.
+          </p>
+          <div class="card-footer">
+            <div class="card-profile">
+              <img src="https://builtin.com/sites/www.builtin.com/files/2024-10/cybersecurity.png" alt="фото">
+              <div class="card-profile-info">
+                <span class="card-profile-name">!NextStep</span>
+                <span class="card-profile-role">читати більше...</span>
+              </div>
+            </div>
+            <a class="card-button" href="">Read More</a>
+          </div> 
+        </div>
+      </div>
+    </article>
+
+    <article class="box">
+      <div class="card swiper-slide">
+        <div class="card-image">
+          <img src="https://www.pandasecurity.com/en/mediacenter/src/uploads/2024/09/pandasecurity-cybersecurity-measures-1920x1011.jpg" alt="фото">
+          <p class="card-tag">#захист</p>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Криптографія</h3>
+          <p class="card-text">Приклад атаки: Перехоплення незашифрованих паролів через публічний Wi-Fi. 
+            Або перехоплення приватних паролів які не надійно захищені.
+          </p>
+          <div class="card-footer">
+            <div class="card-profile">
+              <img src="https://builtin.com/sites/www.builtin.com/files/2024-10/cybersecurity.png" alt="фото">
+              <div class="card-profile-info">
+                <span class="card-profile-name">!NextStep</span>
+                <span class="card-profile-role">читати більше...</span>
+              </div>
+            </div>
+            <a class="card-button" href="">Read More</a>
+          </div> 
+        </div>
+      </div>
+    </article>
+
+    <article class="box">
+      <div class="card swiper-slide">
+        <div class="card-image">
+          <img src="https://www.mtsu.edu/wp-content/uploads/2023/11/cybersecurity-management-scaled-jpg.webp" alt="фото">
+          <p class="card-tag">#Маніпуляція</p>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Соціальна інженерія</h3>
+          <p class="card-text">Приклад атаки: Фішинг – шахраї надсилають підроблені 
+            листи від імені банку, частіше за все щоб викрасти засекречені паролі. 
+            та отримати доступ до персональних данних. 
+          </p>
+          <div class="card-footer">
+            <div class="card-profile">
+              <img src="https://builtin.com/sites/www.builtin.com/files/2024-10/cybersecurity.png" alt="фото">
+              <div class="card-profile-info">
+                <span class="card-profile-name">!NextStep</span>
+                <span class="card-profile-role">читати більше...</span>
+              </div>
+            </div>
+            <a class="card-button" href="">Read More</a>
+          </div> 
+        </div>
+      </div>
+    </article>
+    
+   </section>
+
+   <div class="box-info">
+     <h1 id="merecsheva-bezpeka">Детальніше про кожен з них:</h1>
+   </div>
+
+  <section class="section-profile">
+
+    <article>
+
+      <div class="section-profile-content">
+        <h2>Мережева безпека</h2>
+        <p> <span>Мережева безпека</span> — це набір заходів, технологій і політик, які захищають комп’ютерні мережі від несанкціонованого доступу, кібератак та втрати або крадіжки даних.</p>
+        <h3> > Основні методи захисту:</h3>
+        <ul>
+            <li>Фаєрволи (брандмауери) – фільтрують вхідний і вихідний трафік.</li>
+            <li>VPN (віртуальна приватна мережа) – шифрує інтернет-з’єднання, щоб приховати трафік.</li>
+            <li>Системи виявлення та запобігання атак (IDS/IPS) – аналізують трафік і блокують загрози.</li>
+            <li>Розділення мережі (Segmentation) – обмежує доступ між сегментами мережі, щоб зменшити ризики.</li>
+        </ul>
+    
+      </div>
+
+      <div class="section-profile-img">
+        <img src="https://i0.wp.com/iland.ua/wp-content/uploads/2022/10/Cyber_Security_vs_Network_Security_Logo_iLand.jpg?fit=1600%2C900&ssl=1" alt="фото"
+        width="100%" height="100%">
+      </div>
+
+    </article>
+
+    <div class="section-profile-div">
+      <h3> Приклади мережевих атак</h3>
+      <ul>
+        <li>
+          <span>Фішинг</span><br>
+          Надсилають фальшиві листи з посиланнями на шкідливі сайти <span>>>></span> людина вводить пароль — і хакер отримує доступ.
+        </li>
+        <li>
+          <span>DDoS-атака (Distributed Denial of Service)</span><br>
+          Тисячі комп’ютерів одночасно "бомбардують" сайт, щоб його "покласти" (перевантажити) <span>>>></span> приклад: атаки на урядові сайти або великі компанії.
+        </li>
+        <li>
+          <span>Віруси і трояни</span><br>
+          Потрапляють на комп’ютер через електронну пошту або шкідливе ПЗ <span>>>></span> можуть красти файли, вимагати викуп (наприклад, вірус WannaCry).
+        </li>
+        <li>
+          <span>Man-in-the-Middle (Атака “людина посередині”)</span><br>
+          Хакер перехоплює дані між користувачем і сайтом <span>>>></span> наприклад, при використанні незахищеної Wi-Fi мережі в кафе.
+        </li>
+        <li>
+          <span>Сканування портів</span><br>
+          Хакер "перевіряє" комп’ютер на відкриті порти, через які можна увійти <span>>>></span> як злодій, який шукає незачинені двері.
+        </li>
+      </ul>
+    </div>
+
+    <div id="informaciina-bezpeka" class="box-info-all"></div>
+
+    <article>
+
+      <div class="section-profile-content">
+        <h2 id="merecsheva-bezpeka">Інформаційна безпека</h2>
+        <p> <span>Інформаційна безпека </span> — це захист будь-якої інформації (цифрової, письмової, усної) від несанкціонованого доступу, зміни або знищення.</p>
+        <h3> > Основні методи захисту:</h3>
+        <ul>
+            <li>Паролі та логіни - надійні паролі допоможуть захистити інфомацію.</li>
+            <li>Шифрування - дозволить приховати інформацію від зайвих очей.</li>
+            <li>Контроль доступу - наприклад, доступ лише адміністратору.</li>
+            <li>Створення резервних копій (бекапи) - допоможе зберегти інформацію в разі її повного втрачення.</li>
+        </ul>
+    
+      </div>
+
+      <div class="section-profile-img">
+        <img src="https://ipland.com.ua/thumbnails/storeimages/article/security_ipland_A19xheI.jpg?wid=870&hei=580&cover=1" alt="фото"
+        width="100%" height="100%">
+      </div>
+      
+    </article>
+
+    <div class="section-profile-div">
+      <h3> Приклади інформаційних атак</h3>
+      <ul>
+        <li>
+          <span>Фішинг</span><br>
+          Підроблені листи або сайти, які крадуть логіни/паролі/карткові дані <span>>>></span> часто маскуються під банки або соцмережі.
+        </li>
+        <li>
+          <span>Соціальна інженерія</span><br>
+          Зловмисник "обманом" витягує інформацію <span>>>></span> наприклад: телефонує під виглядом техпідтримки і просить пароль.
+        </li>
+        <li>
+          <span> Вимагачі (Ransomware)</span><br>
+          Програма, яка блокує доступ до даних і вимагає гроші за розблокування <span>>>></span> відомий приклад — WannaCry.
+        </li>
+        <li>
+          <span>Несанкціонований доступ</span><br>
+          Хтось отримав логін/пароль до чутливої інформації та переглядає або краде її <span>>>></span> часто стається, якщо паролі слабкі або не змінюються роками.
+        </li>
+        <li>
+          <span>Витік даних (Data Breach)</span><br>
+          Хакери зламали базу даних сайту й виклали дані у відкритий доступ <span>>>></span> наприклад: витік даних Facebook, LinkedIn, Dropbox.
+        </li>
+      </ul>
+    </div>
+
+    <div id="OPSEC-bezpeka" class="box-info-all"></div>
+
+    <article>
+
+      <div class="section-profile-content">
+        <h2>Операційна безпека (OPSEC)</h2>
+        <p> <span>Операційна безпека</span> — це процес виявлення, захисту і контролю над важливою інформацією, яка може бути використана зловмисниками для завдання шкоди.</p>
+        <h3> > Основні методи захисту:</h3>
+        <ul>
+            <li>Не залишай важливу інформацію на виду.</li>
+            <li>Не обговорюй важливе в публічних місцях.</li>
+            <li>Видаляй або знищуй конфіденційні документи.</li>
+            <li>Використовуй ролі доступу — не всім усе можна бачити.</li>
+        </ul>
+      </div>
+
+      <div class="section-profile-img">
+        <img src="https://translations.com.ua/wp-content/uploads/2023/02/informaczijna-bezpeka-cze-shho-take.png" alt="фото"
+        width="100%" height="100%">
+      </div>
+
+    </article>
+
+    <div class="section-profile-div">
+      <h3> Приклади операційних атак</h3>
+      <ul>
+        <li>
+          <span>Соціальна інженерія</span><br>
+          Хакер "вивідує" важливу інформацію, прикидаючись іншим (наприклад, працівником техпідтримки) <span>>>></span> часто навіть просте питання типу "А який у вас поштовий сервер?" — це збір розвідданих.
+        </li>
+        <li>
+          <span>Фотографії з робочого місця</span><br>
+          Люди часто постять фото з монітором або документами <span>>>></span> можна випадково показати: логіни, ip-адреси, приватні документи.
+        </li>
+        <li>
+          <span>Недбале поводження з документами</span><br>
+          Документи не знищуються, а просто викидаються <span>>>></span> відомий приклад: “Dumpster diving” — пошук документів у смітниках.
+        </li>
+        <li>
+          <span>Відкриті дані в Інтернеті</span><br>
+          Компанія випадково залишила доступними на сайті внутрішні сторінки або адмін-панель <span>>>></span> також буває, що злі адміністратори залишають "бекдори" — спеціальні входи в систему.
+        </li>
+        <li>
+          <span>Розмови в публічних місцях</span><br>
+          Обговорення конфіденційної інформації в кав’ярнях, ліфтах або транспорті <span>>>></span> хакер може просто підслухати або записати розмову.
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  
+</main>
+
+</body>
+</html>
