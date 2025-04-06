@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+main{
+    padding-top:60px;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    position: fixed;
+    width: 99%;
+    display: flex;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #1a1a1a;
+    color: white;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.navbar h2{
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+
+.nav-header {
+    display: flex; /* Для десктопної версії */
+}
+
+.nav-header a{
+    color: white;
+    margin: 0 10px 0;
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.nav-header a:hover{
+    background: white;
+    color: #7e46ff;
+    font-size: 20.2px;
+    border-bottom: 1px solid white;
+    box-shadow: 0 0 6px white;
+}
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+    left: -250px;
+    top: 70px;
+    height: 100%;
+    background: #1a1a1a;
+    color: white;
+    transition: 0.3s;
+    padding-top: 20px;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+}
+
+.sidebar a {
+    font-family: monospace;
+    text-align: center;
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.sidebar a:hover {
+    background: #ffffff;
+    box-shadow: -1px 0px 4px #ffffff;
+    color: black;
+}
+
+.menu-btn {
+    position: fixed;
+    font-size: 23px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background: #292929;
+    color: white;
+    border: none;
+    float: left;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: 0.4s ease;
+}
+
+.menu-btn:hover {
+    border: 1px solid #ffffff;
+    background: white;
+    box-shadow: 0px 0px 4px #ffffff;
+    color: #7e46ff;
+}
+
+.hero{
+    margin: 20px 300px 10px;
+    text-align: center;
+    font-size: 45px;
+    padding: 0 0 10px;
+    border-bottom: 5px solid black;
+}
+
+.hero-p{
+    text-align: center;
+    font-weight: 600;
+    opacity: 0.3;
+    margin-bottom: 20px;
+}
+
+.p-info-article .p-info a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0 2px;
+    transition: all 0.2s ease;
+}
+
+.p-info-article .p-info a:hover{
+    color: #7e46ff;
+    border-bottom: 2px solid #7e46ff;
+}
+
+.container-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 100%));
+    gap: 20px;
+    padding: 20px;
+}
+
+.box{
+    background: none;
+    padding: 0 20px 20px;
+    text-align: center;
+}
+
+.section-h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.box h1{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.box p{
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.img-info{
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.779);
+    margin: 20px;
+}
+
+.box .box-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box .box-card{
+    width: 100%;
+    background: #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 0 0 6px black;
+}
+
+.box-info{
+    padding: 10px;
+    background: #1a1a1a;
+    box-shadow: 0px 0px 5px black;
+    color: white;
+}
+
+.box-info-all{
+    background-color: #1a1a1a;
+    height: 71.2px;
+}
+
+.box-info h1{
+    text-align: center;
+}
+
+.box-card p{
+    color: white;
+    margin: 0 10px 10px;
+    padding: 5px;
+}
+
+.box-card h2{
+    color: white;
+    margin: 10px 10px 0;
+    padding: 5px;
+}
+
+.box-card img{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@11..32,100..900&display=swap');
+
+.box-container{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.box .card{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+    transition: all 0.5s ease;
+}
+
+.box .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.45);
+}
+
+.card .card-image{
+    position: relative;
+}
+
+.card .card-image img{
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 22px;
+    aspect-ratio: 16 \ 9;
+    object-fit: cover;
+}
+
+.card .card-image .card-tag{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #6366f1;
+    background: rgba(255, 255, 255, 0.886);
+    border-radius:30px;
+    font-weight: 600;
+    padding: 4px 7px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.card .card-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px 25px;
+}
+
+.card .card-content .card-title{
+    color: #111;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.card .card-content .card-text{
+    color: #363636;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.card .card-content .card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-top: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.card .card-footer .card-profile{
+    display: flex;
+    align-items: center;
+}
+
+.card .card-profile img{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-profile .card-profile-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-profile .card-profile-name{
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #202020;
+}
+
+.card .card-profile .card-profile-role{
+    font-size: 0.8rem;
+    color: #7a7a7a;
+}
+
+.card .card-footer .card-button{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.81rem;
+    text-decoration: none;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    box-shadow: 0 8px 15px rgba(99, 100, 241, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card .card-footer .card-button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(99, 100, 241, 0.3);
+}
+
+.p-info{
+    text-align: center;
+    margin: 20px;
+    font-size: 23px;
+}
+
+.p-info p{
+    width: 100%;
+}
+
+.p-info span{
+    color: #6b2cff;
+}
+
+.p-info p{
+    font-weight: 800;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+
+.box-info-p{
+    text-align: center;
+    font-family: serif;
+    opacity: 0.9;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.section-profile h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    border-left: 8px solid #8b5cf6;
+    padding: 5px 0 5px 10px;
+    margin: 30px 50px 0;
+}
+
+.section-profile p{
+    margin: 10px 50px 0;
+    font-family: serif;
+    font-size: 25px;
+}
+
+.section-profile span{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.section-profile h3{
+    text-transform: uppercase;
+    margin: 10px 50px 0;
+    padding-left: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.section-profile ul{
+    list-style: circle;
+    margin: 10px 70px 0;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.section-profile ul li{
+    margin: 5px;
+    transition: all 0.7s ease;
+    font-weight: 500;
+}
+
+.section-profile ul li:hover{
+    color: #7e46ff;
+    transform: translateX(20px);
+    cursor: pointer;
+}
+
+.section-profile article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-bottom: 45px;
+}
+
+.section-profile-content{
+    width: 800px;
+}
+
+.section-profile-img{
+    flex: 1;
+}
+
+.section-profile img{
+    box-shadow: 0 0 5px black;
+    border-radius: 20%;
+    margin: 20px 10px 20px 0;
+    transition: all 0.5s ease;
+}
+
+.section-profile img:hover{
+    border-radius: 15%;
+}
+
+.section-profile-div{
+    margin-bottom: 30px;
+}
+
+.section-profile-div ul{
+    list-style-type: disc;
+    margin: 10px 70px 0;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.section-profile-div ul li{
+    margin: 5px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.section-profile-div ul li:hover{
+    transform: translateX(-5px);
+    color: black;
+    cursor: default;
+}
+
+.section-profile-div ul li:hover span{
+    color: #7e46ff;
+}
+
+.section-profile-div span{
+    font-size: 20px;
+}
+
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 20px;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .carousel img {
+    height: 150px;
+    width: auto;
+    flex-shrink: 0;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+
+
+
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+    .nav-header {
+        display: none; /* Приховуємо горизонтальне меню на мобільних */
+        flex-direction: column; /* Робимо елементи вертикальними */
+        position: absolute; /* Позиціонуємо меню абсолютно */
+        top: 60px; /* Розміщуємо під навігаційною панеллю */
+        left: 0;
+        width: 100%;
+        background: #1a1a1a;
+        padding: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-header a {
+        display: block; /* Робимо посилання блочними елементами */
+        margin: 5px 0; /* Додаємо відступи між посиланнями */
+    }
+
+    .nav-header.show {
+        display: flex; /* Показуємо меню при додаванні класу .show */
+    }
+
+    .navbar h2 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .menu-btn {
+        left: 10px;
+    }
+
+    .sidebar {
+        top: 60px;
+    }
+
+    .hero{
+        margin: 15px 5px 5px;
+        font-size: 32px;
+        padding:  0 0 5px;
+    }
+
+    .box h1, .box-info h1{
+        font-size: 24px;
+    }
+
+    .box p, .box-info p{
+        font-size: 17px;
+    }
+
+    .box-info-p{
+        font-size: 20px;
+    }
+
+    .carousel img {
+        height: 100px;
+        animation: scroll 5s linear infinite;
+    }
+
+    .section-profile h2{
+        font-size: 25px;
+    }
+
+    .section-profile p{
+        font-size: 20px;
+    }
+    
+    .section-profile span{
+        font-size: 18px;
+    }
+
+    .section-profile img{
+        box-shadow: 0 0 5px black;
+        margin: 20px 10px 20px 0;
+        border-radius: 0;
+    }
+}
