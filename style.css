@@ -59,7 +59,7 @@ main{
 .sidebar {
     width: 250px;
     position: fixed;
-    left: -250px;
+    left: -300px;
     top: 70px;
     height: 100%;
     background: #1a1a1a;
@@ -227,10 +227,10 @@ main{
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@11..32,100..900&display=swap');
 
 .box-container{
-    padding: 20px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
 }
 
@@ -589,10 +589,12 @@ main{
 
     .section-profile h2{
         font-size: 25px;
+        margin: 20px 30px 10px;
     }
 
     .section-profile p{
         font-size: 20px;
+        margin: 10px;
     }
     
     .section-profile span{
@@ -601,7 +603,19 @@ main{
 
     .section-profile img{
         box-shadow: 0 0 5px black;
-        margin: 20px 10px 20px 0;
+        margin: 20px 0 20px;
         border-radius: 0;
+    }
+
+    .section-profile ul{
+        margin: 10px 30px 10px;
+    }
+
+    .p-info{
+        font-size: 20px;
+    }
+
+    .p-info-article .p-info a{
+        color: #7e46ff;
     }
 }
