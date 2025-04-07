@@ -192,11 +192,6 @@ main{
     color: white;
 }
 
-.box-info-all{
-    background-color: #1a1a1a;
-    height: 71.2px;
-}
-
 .box-info h1{
     text-align: center;
 }
@@ -227,6 +222,7 @@ main{
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@11..32,100..900&display=swap');
 
 .box-container{
+    background: #1a1a1a;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -381,15 +377,6 @@ main{
     margin-bottom: 20px;
 }
 
-
-.box-info-p{
-    text-align: center;
-    font-family: serif;
-    opacity: 0.9;
-    font-size: 25px;
-    margin: 10px;
-}
-
 .section-profile h2{
     font-size: 30px;
     text-transform: uppercase;
@@ -417,6 +404,13 @@ main{
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
+#dark-slide h3{
+    text-transform: uppercase;
+    margin: 10px 50px 0;
+    padding-left: 20px;
+    border-bottom: 2px solid #8b5aff;
+}
+
 .section-profile ul{
     list-style: circle;
     margin: 10px 70px 0;
@@ -433,7 +427,13 @@ main{
 .section-profile ul li:hover{
     color: #7e46ff;
     transform: translateX(20px);
-    cursor: pointer;
+    cursor: default;
+}
+
+#dark-slide .section-profile ul li:hover{
+    color: #7e46ff;
+    transform: translateX(20px);
+    cursor: default;
 }
 
 .section-profile article{
@@ -481,16 +481,28 @@ main{
 
 .section-profile-div ul li:hover{
     transform: translateX(-5px);
-    color: black;
     cursor: default;
+    color: black;
 }
 
 .section-profile-div ul li:hover span{
     color: #7e46ff;
 }
 
+#dark-slide .section-profile-div ul li:hover{
+    transform: translateX(-5px);
+    cursor: default;
+    color: rgb(255, 255, 255);
+}
+
 .section-profile-div span{
     font-size: 20px;
+}
+
+#dark-slide{
+    background: #1a1a1a;
+    color: white;
+    padding: 10px 0 20px;
 }
 
 
@@ -522,8 +534,144 @@ main{
     100% {
       transform: translateX(-50%);
     }
-  }
-  
+}
+
+.section-defense{
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #1a1a1a;
+}
+
+.section-defense article{
+    background: #ffffff;
+    width: 600px;
+    padding: 20px 30px;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #00000058;
+}
+
+.div-img-defense{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid #763cff;
+    box-shadow: 0 0 4px #763cff;
+    background-image: url(https://www.forum-lab.it/wp-content/uploads/2022/05/cybersecurity.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-img-defense-2{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid #763cff;
+    box-shadow: 0 0 4px #763cff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://www.mtsu.edu/wp-content/uploads/2023/11/cybersecurity-management-scaled-jpg.webp);
+}
+
+.div-img-defense-3{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid #763cff;
+    box-shadow: 0 0 4px #763cff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://www.forum-lab.it/wp-content/uploads/2022/05/cybersecurity.jpg);
+}
+
+.div-img-defense-4{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid #763cff;
+    box-shadow: 0 0 4px #763cff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://datos-insights.com/wp-content/uploads/2023/07/what-we-offer_cybersecurity.jpg);
+}
+
+.section-defense h1{
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.section-defense .line-bottom{
+    width: 100%;
+    height: 2px;
+    background: #7e46ff;
+    box-shadow: 0 0 2px #763cff;
+    margin: 10px 0 10px;
+}
+
+.section-defense h2{
+    margin: 0 0 5px 0;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 17px;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.329);
+    transition: all 0.6s ease;
+}
+
+.section-defense p{
+    font-size: 17px;
+    font-family: sans-serif;
+    transition: all 0.6s ease;
+}
+
+.section-defense .line-effect{
+    margin-top: 10px;
+    transition: all 0.6s ease;
+}
+
+.section-defense .line-effect:hover{
+    padding: 10px;
+    border-radius: 20px;
+    transform: scale(1.005);
+    font-style: oblique;
+}
+
+.section-defense .line-effect:hover h2{
+    font-style: normal;
+    border-bottom: 1.5px solid #763cff97;
+    font-size: 18px;
+    margin-right: 400px;
+}
+
+.section-defense .line-effect:hover p{
+    font-size: 17px;
+}
+
+.section-defense ul{
+    list-style: outside;
+    margin-left: 20px;
+}
+
+.section-defense ul li{
+    margin: 5px 0 5px;
+    transition: all 0.6s ease;
+    font-size: 18px;
+}
+
+.section-defense ul li:hover{
+    transform: scale(1.03);
+    color: #763cff;
+    cursor: default;
+}
 
 
 
@@ -574,17 +722,17 @@ main{
         font-size: 24px;
     }
 
-    .box p, .box-info p{
+    .box-info p{
         font-size: 17px;
     }
 
     .box-info-p{
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .carousel img {
         height: 100px;
-        animation: scroll 5s linear infinite;
+        animation: scroll 7s linear infinite;
     }
 
     .section-profile h2{
@@ -592,7 +740,15 @@ main{
         margin: 20px 30px 10px;
     }
 
+    .section-profile h3{
+        text-align: center;
+        font-size: 18.5px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
     .section-profile p{
+        padding-left: 10px;
         font-size: 20px;
         margin: 10px;
     }
@@ -607,15 +763,57 @@ main{
         border-radius: 0;
     }
 
+    .section-profile img:hover{
+        border-radius: 0;
+    }
+
     .section-profile ul{
         margin: 10px 30px 10px;
     }
 
+    .section-profile ul li:hover{
+        transform: translateX(10px);
+    }
+
     .p-info{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .p-info-article .p-info a{
         color: #7e46ff;
+        font-size: 14px;
+        border-bottom: 1.2px solid #7e46ff;
     }
+
+    .section-defense{
+        gap: 0;
+    }
+
+    .section-defense article{
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    main{
+        border-left: 3px solid #763cff;
+        border-right: 3px solid #763cff;
+    }
+
+    .section-defense .line-effect:hover{
+        padding: 0;
+        transform: scale(1);
+    }
+    
+    .section-defense .line-effect:hover h2{
+        font-size: 17px;
+        margin-right: 0;
+        color: #763cff;
+    }
+    
+    .section-defense .line-effect:hover p{
+        font-size: 17px;
+        font-style: normal;
+    }
+
 }
